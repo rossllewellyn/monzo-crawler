@@ -1,4 +1,19 @@
 {
   "name": "monzo-crawler",
-  "author": "Ross Llewellyn"
+  "author": "Ross Llewellyn",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node build/main.js",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
+  },
+  "dependencies": {
+    "node-html-parser": "^7.0.1",
+    "zod": "^3.24.2"
+  }
 }
